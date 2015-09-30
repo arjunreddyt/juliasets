@@ -7,7 +7,7 @@ class JuliaSet(object):
         self._complexplane = []
         self._set = []
         
-        
+       
         def xfrange(start, stop, step):
             while start < stop:
                 yield start
@@ -38,3 +38,4 @@ class JuliaSet(object):
     def generate(self):
         self._set = [iterate(z) for z in self._complexplane]
         return self._set
+
