@@ -10,10 +10,10 @@ class JuliaSet(object):
     def makeplane(self):
         r=[i*self._d for i in range(int(-2/self._d),int(2/self._d),1)]
         self._complexplane=[complex(x,y) for x in r for y in r]
-        
+
     def juliamap(self, z):
         return (z**2) + self.c
-    
+
     def iterate(self, z):
         m = 0
         while True:
