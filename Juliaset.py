@@ -1,4 +1,4 @@
-class JuliaSet(object):
+class Juliaset(object):
     
     def __init__(self, c, n=100):
         self.c = c
